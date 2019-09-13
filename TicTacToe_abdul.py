@@ -3,6 +3,7 @@ def tac_toc_game():
     a, b, c, d, e, f, g, h, k = '', '', '', '', '', '', '', '', ''
 
     def draw_board(a1, b1, c1, d1, e1, f1, g1, h1, k1):
+        print('\n' * 100)
         print(f'  {a1}  ||  {b1}  ||  {c1}')
         print('------------------')
         print(f'  {d1}  ||  {e1}  ||  {f1}')
@@ -66,6 +67,7 @@ def tac_toc_game():
             print(f' step no : {i}')
             print('Both winner')
             break
+
         # Player two +++++++++++++++++++++++++++++++++++++
         p2 = int(input('player 2 enter num from 1 - 9 :'))
         if p2 == 7:
@@ -130,19 +132,6 @@ while True:
             break
     elif choose_player == 'no':
         print('ask your friend to start')
-        break
+        tac_toc_game()
     else:
         break
-
-
-
-
-
-
-
-
-
-
-
-
-
